@@ -1,0 +1,40 @@
+@import "styles/shared/colors";
+
+body {
+  background: url("./images/bg.jpg");
+  color: #004d40;
+  min-height: 100vh;
+}
+
+:global(#root) {
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.header {
+  background: $successColor;
+  padding: 0 10px;
+  color: cyan;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  padding: 8px;
+}
+
+.contentBody {
+  max-width: 500px;
+  margin: 0 auto;
+}
